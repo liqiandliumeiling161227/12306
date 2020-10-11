@@ -9,19 +9,19 @@ TICKET_TYPE = 1
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-18"
+    "2020-10-23"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = []
+STATION_TRAINS = [G2521]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "广州南"
+FROM_STATION = "北京北"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "隆回"
+TO_STATION = "大同南"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -42,11 +42,11 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = []
+TICKET_PEOPLES = [李奇]
 
 # 12306登录账号
-USER = ""
-PWD = ""
+USER = "13152922770"
+PWD = "qwe13643423315"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -68,10 +68,10 @@ HTTP_TYPE = "http"
 
 #  邮箱配置，如果抢票成功，将通过邮件配置通知给您
 #  列举163
-#  email: "xxx@163.com"
+#  email: "liqiandliumeiling@163.com"
 #  notice_email_list: "123@qq.com"
-#  username: "xxxxx"
-#  password: "xxxxx
+#  username: "liqiandliumeiling@163.com"
+#  password: "qwe13643423315"
 #  host: "smtp.163.com"
 #  列举qq  ，qq设置比较复杂，需要在邮箱-->账户-->开启smtp服务，取得授权码==邮箱登录密码
 #  email: "xxx@qq.com"
@@ -126,8 +126,8 @@ CHROME_PATH = "/usr/src/app/chromedriver"
 CHROME_CHROME_PATH = "/opt/google/chrome/google-chrome"
 
 # 如果COOKIE_TYPE=3, 则需配置RAIL_EXPIRATION、RAIL_DEVICEID的值
-RAIL_EXPIRATION = ""
-RAIL_DEVICEID = ""
+RAIL_EXPIRATION = "Nw2RO9o23IgsC6ldVLvwBrNqcJqxqtkLE8s_5K4BBM7NWRMzg5_WON0yWlN49DtXVhvd9KCAvpaAjIA1UgIsKnBme9E8Dqh1MLm-ZiYjTUqnNXpKX_vYbM4MK8YoJHiMNMLwQ6kQlmPgHLSNpxCCZoKfiVD-Ynvu"
+RAIL_DEVICEID = "1602679491759"
 # RAIL_EXPIRATION = "1577034103293"
 # RAIL_DEVICEID = "CDno29Erc_Pf3FSXb4dzq-Op64EhWrsi5yUZKVIKR1MAfYo2qFlCeXD8VkexY7_1qg-ClV-fE8j9jgVlPZxRh3wVc2iqLe_5A8sdr62qZx4B22JPF8lFCjpgTKZ5ODW90HJd5tiQsJ1KR9nOqHRxHj1FT5LEIwfw"
 
